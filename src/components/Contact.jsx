@@ -11,7 +11,7 @@ function Contact() {
 
   return (
     <div className=" my-25 h-[60vh]">
-      <form data-aos="fade-up" action="https://api.web3forms.com/submit" method="POST" className="box relative hover:transform hover:translate-y-[-2px] flex gap-2 flex-col md:w-[50vw] w-[90vw] m-auto p-4 rounded-md ">
+      <form data-aos="fade-up" action="https://api.web3forms.com/submit" method="POST" className="box relative hover:transform hover:translate-y-[-2px] flex gap-2 flex-col md:w-[50vw] w-[95vw] m-auto p-3 rounded-md ">
         <h2 className='md:text-3xl text-2xl m-auto mb-2 font-bold text-[var(--textcolor)]'>Get In Touch</h2>
         <input type="hidden" name="access_key" value="2680dfd0-09e7-4706-866e-2134f8361f12" />
         <div className="form-group">
