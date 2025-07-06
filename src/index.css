@@ -1,0 +1,331 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-md: 770px;
+  --breakpoint-sm: 450px;
+  --breakpoint-xsm: 360px;
+}
+
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+  background-color: var(--background);
+}
+
+:root {
+  --background: #ebdfdf;
+  --textcolor: rgb(14, 13, 13);
+  --shadow-color: rgba(0, 0, 0, 0.5);
+  --box-color: rgba(0, 0, 0, 0.3);
+
+  --gradient-color: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  --color: rgb(250, 83, 5);
+  --button-color: #1111e6;
+}
+[data-theme="dark"] {
+  --background: rgb(3, 2, 29);
+    --box-color: rgba(255, 255, 255, 0.1);
+  --textcolor: #e6dede;
+  --shadow-color: rgba(255, 255, 255, 0.5);
+    --gradient-color: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+  --color: rgb(250, 83, 5);
+  --button-color: rgb(17, 17, 230);
+}
+
+.logo {
+  font-size: 40px;
+}
+.logo-text {
+  font-size: 45px;
+  background: var(--gradient-color);
+  background-clip: text;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-link {
+  cursor: pointer;
+  position: relative;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.nav-link:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease-in-out;
+  color: var(--color);
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -1px;
+  width: 0;
+  height: 2px;
+  background: var(--gradient-color);
+  border-radius: 5px;
+  transform: translateX(-50%);
+  transition: width 0.2s ease-in-out;
+}
+
+.nav-link:hover::after {
+  width: 130%;
+}
+
+.my-border {
+  box-shadow: 0px 0px 8px var(--shadow-color);
+}
+.button {
+  font-size: 17px;
+  height: 33px;
+  font-weight: 600;
+  border-radius: 3px;
+  background-color: var(--background);
+  color: var(--textcolor);
+  border: none;
+  box-shadow: 0px 0px 2px var(--shadow-color),
+    inset -2px -3px 3px var(--shadow-color);
+
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0px 0px 2px var(--shadow-color),
+    inset -2px -3px 3px var(--shadow-color);
+  transition: transform 0.2s ease-in-out;
+}
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  box-shadow: 0px 0px 12px var(--shadow-color),
+    inset -2px -3px 3px var(--shadow-color), 0 4px 16px var(--shadow-color);
+  background: var(--gradient-color);
+  z-index: -1;
+  transition: width 0.2s ease-in-out;
+}
+.button:hover::before {
+  width: 100%;
+}
+
+.home-img {
+  height: 57vh;
+  width: 31vw;
+}
+.home-img img {
+  height: 400px;
+  border: 1px solid var(--textcolor);
+  background: var(--gradient-color);
+  margin: 43px 44px;
+  border-radius: 54% 46% 69% 31% / 29% 34% 66% 71%;
+  animation: img 4s ease-in-out infinite forwards;
+  transition: all 1.5s ease-in-out;
+}
+
+@keyframes img {
+  0% {
+    border-radius: 67% 33% 43% 57% / 38% 30% 70% 62%;
+  }
+  50% {
+    border-radius: 30% 70% 62% 38% / 30% 30% 70% 70%;
+  }
+  100% {
+    border-radius: 67% 33% 43% 57% / 38% 30% 70% 62%;
+  }
+}
+.home-img img:hover {
+  transform: scale(1.005);
+  /* background-color: var(--gradient-color); */
+}
+
+
+/* skills section */
+
+
+.subject{
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--textcolor);
+  padding-bottom: 3px;
+}
+.progress-bar{
+  width: 95%;
+  position: relative;
+  height: 6px;
+  background-color:var(--textcolor);
+  border-radius: 5px;
+
+}
+.progress-bar::after {
+  position: absolute;
+  content: attr(value);
+  font-weight: 600;
+  color: var(--textcolor);
+  top: -30px;
+  right: 0;
+  font-size: 18px;
+}
+.progress-line {
+  position: absolute;
+  width: 90%;
+  height: 7px;
+  background: var(--gradient-color);
+  border-radius: 15px;
+  top: -1px;
+  animation: progress 3s ease-in-out forwards;
+  
+  /* animation-timeline: view(); */
+}
+.progress-line::after{
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: var(--gradient-color);
+  border-radius: 50%;
+  top: -3px;
+  right: 0;
+  animation: progress .3s ease-in-out forwards;
+
+}
+
+@keyframes progress {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: full;
+  }
+}
+/* certificates section */
+
+.box{
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px var(--shadow-color);
+  overflow: hidden;
+   
+}
+.box:hover{
+  /* transform: translateY(-2px); */
+  box-shadow: 0px 3px 7px var(--shadow-color);
+  transition: transform 0.2s ease-in-out;
+    
+}
+
+.box::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  box-shadow: 0px 0px 12px var(--shadow-color),
+    inset 0px -1px 3px var(--shadow-color), 0 4px 4px var(--shadow-color);
+  background: var(--gradient-color);
+  z-index: -1;
+  opacity: 0.4;
+  transition: height 0.2s ease-in-out;
+}
+.box:hover::before {
+  height: 100%;
+}
+
+.form-group input {
+  border: none;
+outline: none;
+padding: 8px;
+width: 100%;
+height: 33px;
+border-radius: 5px;
+background-color: rgb(200, 201, 192);
+
+}
+
+.form-group textarea {
+  border: none;
+  padding: 8px;
+outline: none;
+border-radius: 5px;
+width: 100%;
+background-color: rgb(200, 201, 192);
+
+}
+
+.form-group label{
+  color: var(--textcolor);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    left: -100%;
+    top: 60px;
+    width: 100vw;
+    background-color: var(--textcolor);
+    color: var(--background);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    transition: left 0.2s ease-in-out;
+  }
+  .show {
+    left: 0;
+    transition: left 0.2s ease-in-out;
+  }
+  .logo {
+    font-size: 35px;
+  }
+  .home-img {
+  height: 57vh;
+  width: 100vw;
+}
+.home-img img {
+    height: 315px;
+    margin: 1px;
+}
+.subject {
+    font-size: 15px;
+}
+.progress-bar::after {
+    top: -25px;
+    font-size: 15px;
+}
+    .progress-bar {
+    height: 4px;
+}
+.progress-line {
+    height: 5px;
+    top: 0px;
+}
+.progress-line::after {
+    width: 10px;
+    height: 10px;
+}
+.form-group input{
+  height: 28px;
+}
+.form-group label{
+  font-size: 14px;
+}
+.button{
+  font-size: 15px;
+}
+}
