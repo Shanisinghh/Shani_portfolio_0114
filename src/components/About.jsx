@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import photo from '../assets/photo.png'
 
 function About() {
     useEffect(() => {
@@ -13,7 +14,7 @@ function About() {
       <div className="mt-20 md:flex md:flex-row flex flex-col">
         <div data-aos="fade-right" className="md:w-[30%] w-[100%]  flex justify-center items-center ">
           <img
-            src="/src/assets/photo.png"
+            src={photo}
             className="md:w-[75%] w-[50%] rounded-full"
             alt=""
           />

@@ -1,9 +1,22 @@
 
+import shoppyglobe from '../assets/shoppyglobe.png'
+import library from '../assets/library.png'
+import youtube from '../assets/youtube.png'
+import registrationsystem from '../assets/registrationsystem.png'
+import portfoloo from '../assets/portfoloo.png'
+import weatherapp from '../assets/weatherapp.png'
+import currency from '../assets/currency.png'
+import github from '../assets/github.jpg'
+import javascript from '../assets/javascript.jpg'
+import htmlcss from '../assets/htmlcss.jpg'
+import letsbegain from '../assets/letsbegain.jpg'
+import python from '../assets/python.jpg'
+
 export const projects = [
   {
     id: 1,
     title: "ShoppyGlobe E-commerce",
-    image: "/src/assets/shoppyglobe.png",
+    image: shoppyglobe,
     animation: "fade-up",
     github: "https://github.com/Shanisinghh/ShoppyGlobe-E-commerce-Application",
     live: "https://shoppyglobe-e-commerce0114.netlify.app/",
@@ -13,7 +26,7 @@ export const projects = [
   {
     id: 2,
     title: "Online Library System",
-    image: "/src/assets/library.png",
+    image: library,
     animation: "zoom-in",
     github: "https://github.com/Shanisinghh/Online-Library-Systemm",
     live: "https://online-library-system0114.netlify.app/",
@@ -23,7 +36,7 @@ export const projects = [
   {
     id: 3,
     title: "YouTube Clone",
-    image: "/src/assets/youtube.png",
+    image: youtube,
     animation: "fade-right",
     github: "https://github.com/Shanisinghh/You-Tube-Clone",
     live: "https://you-tube-clone0114.netlify.app/",
@@ -33,7 +46,7 @@ export const projects = [
   {
     id: 4,
     title: "Student Registration System",
-    image: "/src/assets/registrationsystem.png",
+    image: registrationsystem,
     animation: "slide-up",
     github: "https://github.com/Shanisinghh/Student-Registration-System",
     live: "https://student-registration-system0114.netlify.app/",
@@ -43,7 +56,7 @@ export const projects = [
   {
     id: 5,
     title: "Portfolio Website",
-    image: "/src/assets/portfoloo.png",
+    image: portfoloo,
     animation: "fade-right",
     github: "https://github.com/Shanisinghh/Shani_portfolio_0114",
     live: "https://shani-portfolio-0114.netlify.app/",
@@ -53,7 +66,7 @@ export const projects = [
   {
     id: 6,
     title: "Weather Application",
-    image: "/src/assets/weatherapp.png",
+    image: weatherapp,
     animation: "flip-right",
     github: "https://github.com/Shanisinghh/Weather-Application",
     live: "https://weather-app0114.netlify.app/",
@@ -63,7 +76,7 @@ export const projects = [
   {
     id: 7,
     title: "Currency Converter",
-    image: "/src/assets/currency.png",
+    image: currency,
     animation: "slide-up",
     github: "https://github.com/Shanisinghh/currency-converter-app",
     live: "https://currency-converter0114.netlify.app/",
@@ -80,35 +93,35 @@ const certificates = [
   {
     id: 1,
     title: " Full Stack Development: Let's begin Certificate",
-    image: "/src/assets/letsbegain.jpg",
+    image: letsbegain,
     animation: "fade-up",
 
   },
   {
     id: 2,
     title: "Designing Web Pages Using HTML and CSS Certificate",
-    image: "/src/assets/htmlcss.jpg",
+    image: htmlcss,
     animation: "flip-left",
 
   },
   {
     id: 3,
     title: "Developing Interactive Websites with JavaScript certificate",
-    image: "/src/assets/javascript.jpg",
+    image: javascript,
     animation:"flip-down"
 
   },
   {
     id: 4,
     title: "Git and GitHub: Mastering Version Control  Certificate",
-    image: "/src/assets/github.jpg",
+    image: github,
     animation:"zoom-in-up"
 
   },
   {
     id: 5,
     title: "python Programming With IOT Certificate",
-    image: "/src/assets/python.jpg",
+    image: python,
     animation:"flip-down"
 
   },

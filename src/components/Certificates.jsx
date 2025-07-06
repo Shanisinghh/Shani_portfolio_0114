@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
 import { FaEye } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
 import certificates from "../data/Data";
 import Aos from "aos";
 import "aos/dist/aos.css";
+
+
 
 function Certificates() {
   useEffect(() => {
