@@ -43,10 +43,9 @@ body {
   font-size: 40px;
 }
 .logo-text {
-  font-size: 45px;
   background: var(--gradient-color);
   background-clip: text;
-
+  
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

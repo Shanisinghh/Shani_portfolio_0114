@@ -45,8 +45,8 @@ export const projects = [
     title: "Portfolio Website",
     image: "/src/assets/portfoloo.png",
     animation: "fade-right",
-    github: "https://github.com/Shanisinghh/Shani-Portfolio-01",
-    live: "https://shani-portfolio01.netlify.app/",
+    github: "https://github.com/Shanisinghh/Shani_portfolio_0114",
+    live: "https://shani-portfolio-0114.netlify.app/",
     description: "Personal portfolio to showcase projects, skills, and contact details.",
     techStack: ["React", "Tailwind CSS", "vite"]
   },

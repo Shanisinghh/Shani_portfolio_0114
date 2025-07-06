@@ -47,7 +47,7 @@ function Home() {
         </div>
         <div className='md:w-[50%] h-[42%] w-[100%] '>
           <div data-aos='fade-up' className='home-img flex justify-center md:block md:ml-15 '>
-             <img src="../src/assets/photo.png"  alt="" />
+             <img src="/photo.png"  alt="" />
 
           </div>
         </div>
