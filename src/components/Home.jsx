@@ -16,6 +16,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Contact from './Contact';
 import Footer from './Footer';
+import photo from '../assets/photo.png'
 
 
         
@@ -47,7 +48,7 @@ function Home() {
         </div>
         <div className='md:w-[50%] h-[42%] w-[100%] '>
           <div data-aos='fade-up' className='home-img flex justify-center md:block md:ml-15 '>
-             <img src="/photo.png"  alt="" />
+             <img src={photo} alt="" />
 
           </div>
         </div>
