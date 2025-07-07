@@ -12,7 +12,7 @@ function About() {
   return (
     <>
       <div className="mt-20 md:flex md:flex-row flex flex-col">
-        <div data-aos="fade-right" className="md:w-[30%] w-[100%]  flex justify-center items-center ">
+        <div data-aos="zoom-in-right" className="md:w-[30%] w-[100%]  flex justify-center items-center ">
           <img
             src={photo}
             className="md:w-[75%] w-[50%] rounded-full"

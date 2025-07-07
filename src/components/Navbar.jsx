@@ -72,9 +72,9 @@ function Navbar() {
             <label htmlFor="theme" className="hover:transform hover:scale-110 duration-75">
               {" "}
               {theme ? (
-                <BsSunFill className="text-3xl  cursor-pointer text-[var(--textcolor)] hover:text-[var(--color)]" />
+                <IoIosMoon className="text-3xl  cursor-pointer text-[var(--textcolor)] hover:text-[var(--color)]" />
               ) : (
-                <IoIosMoon className="text-3xl  text-[var(--textcolor)] hover:text-[var(--color)] cursor-pointer" />
+                <BsSunFill  className="text-3xl  text-[var(--textcolor)] hover:text-[var(--color)] cursor-pointer" />
               )}
             </label>
             <input

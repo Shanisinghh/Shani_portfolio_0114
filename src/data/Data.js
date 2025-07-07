@@ -17,7 +17,7 @@ export const projects = [
     id: 1,
     title: "ShoppyGlobe E-commerce",
     image: shoppyglobe,
-    animation: "fade-up",
+    animation: "zoom-in-up",
     github: "https://github.com/Shanisinghh/ShoppyGlobe-E-commerce-Application",
     live: "https://shoppyglobe-e-commerce0114.netlify.app/",
     description: "A modern e-commerce website with product listing, cart management, and search features.",

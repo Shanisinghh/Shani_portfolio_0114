@@ -16,7 +16,7 @@ function Skills() {
         </h1>
         <div className="md:flex md:flex-row flex flex-col">
           <div
-            data-aos="fade-right"
+            data-aos="zoom-in-right"
             className="text-[var(--textcolor)] md:w-[50%] w-[100%] pr-3 pt-3.5 md:text-[18px] text-[15px] font-semibold"
           >
             <p className="md:block hidden">

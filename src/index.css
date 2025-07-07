@@ -127,7 +127,6 @@ button:hover {
 }
 .home-img img {
   height: 400px;
-  border: 1px solid var(--textcolor);
   background: var(--gradient-color);
   margin: 43px 44px;
   border-radius: 54% 46% 69% 31% / 29% 34% 66% 71%;

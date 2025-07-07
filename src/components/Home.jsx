@@ -23,7 +23,7 @@ import photo from '../assets/photo.png'
 function Home() {
 
     useEffect(() => {
-      Aos.init({ duration: 1000 });
+      Aos.init({ duration: 1500});
     },[])
   const [text] = useTypewriter({
     words: ['Front End Developer', 'React Developer', 'Web Designer', ],
@@ -32,7 +32,7 @@ function Home() {
   return (
     <>
       <div className='md:mt-16 mt-5 md:h-[65vh] h-[100vh] flex flex-col-reverse md:flex md:flex-row'>
-        <div data-aos='fade-up-right'  className='flex flex-col  md:w-[50%] w-[100%] h-[50%] md:pl-25 pl-2 md:pt-14 md:gap-7 gap-4'>
+        <div data-aos='zoom-in-right'  className='flex flex-col  md:w-[50%] w-[100%] h-[50%] md:pl-25 pl-2 md:pt-14 md:gap-7 gap-4'>
           <h2 className='md:text-7xl text-5xl font-bold text-[var(--textcolor)]'>Hi There,</h2>
           <h2  className='md:text-7xl text-5xl font-bold text-[var(--textcolor)]'>I'm <span className='logo-text'>Shani Babu</span></h2>
           <h4 className='md:text-3xl text-2xl font-semibold  text-[var(--textcolor)]'>I'm a <span className='logo-text'>{text}</span> <span className=' text-red-600'><Cursor /></span></h4>
@@ -47,7 +47,7 @@ function Home() {
          
         </div>
         <div className='md:w-[50%] h-[42%] w-[100%] '>
-          <div data-aos='fade-up' className='home-img flex justify-center md:block md:ml-15 '>
+          <div data-aos='zoom-in-up' className='home-img flex justify-center md:block md:ml-15 '>
              <img src={photo} alt="" />
 
           </div>
