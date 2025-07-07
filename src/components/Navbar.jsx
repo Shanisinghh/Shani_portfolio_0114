@@ -36,7 +36,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="my-border z-50 flex justify-between items-center bg-[var(--background)] md:h-17 h-15 fixed top-0 w-screen px-4   md:px-9">
+      <div className="my-border z-50 flex justify-between items-center  border-none backdrop-blur-xl md:backdrop-saturate-100 md:backdrop-blur-0 border-b-[1px]   md:h-17 h-15 fixed top-0 w-screen px-4   md:px-9">
         <div>
          <Link to={'/'}> <p className="logo text-4xl text-[var(--textcolor)] font-bold">
             Por<span className="logo-text">tfo</span>lio.
