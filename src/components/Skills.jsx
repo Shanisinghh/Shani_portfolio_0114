@@ -43,7 +43,7 @@ function Skills() {
             </p>
           </div>
           <div
-            data-aos="fade-up"
+            data-aos="zoom-in-up"
             className="md:w-[50%] w-[100%] md:mt-0 mt-5 flex flex-col gap-5 md:px-6"
           >
             <div className="w-[100%] flex flex-col mb-5 md:mb-0  gap-5 ">

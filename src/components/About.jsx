@@ -19,7 +19,7 @@ function About() {
             alt=""
           />
         </div>
-        <div data-aos='fade-up' className="md:w-[60%] w-[100%] mt-10 p-2.5  md:p-9">
+        <div data-aos='zoom-in-up' className="md:w-[60%] w-[100%] mt-10 p-2.5  md:p-9">
           <h1 className="md:text-4xl text-2xl font-bold text-[var(--textcolor)]">About Me</h1>
           <p className="md:mt-5 mt-2.5 md:text-[18px] text-[15px] font-semibold text-left text-[var(--textcolor)]">
             Hi, I'm Shani Babu from Jhansi, Uttar Pradesh, India. I'm 
