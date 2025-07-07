@@ -28,8 +28,8 @@ function Certificates() {
                 </h2>
                 <div className=" ">
                   {" "}
-                  <Link to={`/certificates/${certificate.id}`}>
-                    <button className="button flex items-center justify-center gap-2 mx-2  w-[222px]">
+                  <Link to={`/certificates/${certificate.id}`} className=" w-[212px] flex ">
+                    <button className="button flex items-center justify-center gap-2 mx-2  w-[212px]">
                    <FaEye /> <span>See Certificate</span>
                   </button>
                   </Link>

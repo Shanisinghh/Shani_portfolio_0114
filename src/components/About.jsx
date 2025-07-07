@@ -34,7 +34,7 @@ function About() {
             coding, and exploring new technologies. My goal is to improve my
             skills and get a job in a well-known MNC (Multinational Company).
           </p>
-         <Link to={'/contact'}> <button className="button mt-5 w-[165px]">Hire Me</button></Link>
+         <Link to={'/contact'}> <button className="button mt-5 w-[185px]">Hire Me</button></Link>
         </div>
       </div>
     </>

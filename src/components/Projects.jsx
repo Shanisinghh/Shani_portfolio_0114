@@ -51,14 +51,14 @@ function Projects() {
                 </div>
                 <div className=" ">
                   {" "}
-                  <div className="flex justify-center">
+                  <div className="flex justify-center gap-2.5">
                     <Link to={project.live} target="_blank">
-                      <button className="button flex justify-center items-center gap-1.5  mx-3 md:w-[170px]   w-[150px]">
+                      <button className="button flex justify-center items-center gap-1.5  md:w-[170px]   w-[150px]">
                         <IoRocketSharp className="text-[red]"/> <span>See Live</span>
                       </button>
                     </Link>
                     <Link to={project.github} target="_blank">
-                      <button className="button flex justify-center items-center gap-1.5  mx-3 md:w-[170px]   w-[150px]">
+                      <button className="button flex justify-center items-center gap-1.5  md:w-[170px]   w-[150px]">
                         <FaLaptopCode className="text-[blue]"/> <span>Git Repo</span>
                       </button>
                     </Link>

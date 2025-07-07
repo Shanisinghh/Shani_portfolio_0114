@@ -37,7 +37,7 @@ function Home() {
           <h2  className='md:text-7xl text-5xl font-bold text-[var(--textcolor)]'>I'm <span className='logo-text'>Shani Babu</span></h2>
           <h4 className='md:text-3xl text-2xl font-semibold  text-[var(--textcolor)]'>I'm a <span className='logo-text'>{text}</span> <span className=' text-red-600'><Cursor /></span></h4>
           {/* <Link to={resume} download='resume'><button className='button'>Download CV</button></Link> */}
-          <a  href={resume} download='shani-resume'><button className='flex items-center justify-center gap-2 button w-43'><MdOutlineFileDownload className='text-2xl'/><span>Download</span></button></a>
+          <a  href={resume} download='shani-resume' className=' w-50'><button className='flex items-center  justify-center gap-2 button w-50'><MdOutlineFileDownload className='text-2xl'/><span>Download</span></button></a>
           <div  className='flex gap-2.5'>
             <Link to={'https://www.linkedin.com/in/shani-web-developer/'} target='_blank'><div><FaLinkedin  className='text-4xl text-blue-800 cursor-pointer transform hover:scale-110 duration-100 '/></div></Link>
             <Link to={'https://github.com/Shanisinghh'} target='_blank'><div><FaGithub  className='text-4xl text-[var(--textcolor)] cursor-pointer  transform hover:scale-110 duration-100'/></div></Link>
