@@ -12,6 +12,7 @@ import Certificates from './components/Certificates.jsx'
 import Projects from './components/Projects.jsx'
 import Contact from './components/Contact.jsx'
 import SeeCertificate from './components/SeeCertificate.jsx'
+import NotFound from './components/NotFound.jsx'
 
 
 
@@ -25,6 +26,7 @@ const router = createBrowserRouter(
       <Route path="/certificates/:id" element={<SeeCertificate />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="*" element={<NotFound />} />
     </Route>
   )
 )

@@ -28,24 +28,31 @@ function Navbar() {
       setTheme(!theme);
     }
   }
-  function handleMenu(){
-    const navLinks = document.getElementById("nav-links")
-    navLinks.classList.toggle("show")
-    setMenu(!menu)
+  function handleMenu() {
+    const navLinks = document.getElementById("nav-links");
+    navLinks.classList.toggle("show");
+    setMenu(!menu);
   }
 
   return (
     <>
       <div className="my-border z-50 flex justify-between items-center  border-none backdrop-blur-xl md:backdrop-saturate-100 md:backdrop-blur-0 border-b-[1px]   md:h-17 h-15 fixed top-0 w-screen px-4   md:px-9">
         <div>
-         <Link to={'/'}> <p className="logo text-4xl text-[var(--textcolor)] font-bold">
-            Por<span className="logo-text">tfo</span>lio.
-          </p></Link>
+          <Link to={"/"}>
+            {" "}
+            <p className="logo text-4xl text-[var(--textcolor)] font-bold">
+              Por<span className="logo-text">tfo</span>lio.
+            </p>
+          </Link>
         </div>
         <div className="flex justify-between items-center gap-12">
           <div className="">
-            <ul onClick={()=>handleMenu()} id="nav-links" className="nav-links flex-col flex gap-3  text-[var(--textcolor)] justify-between items-center md:gap-13 md:flex  md:flex-row">
-              <Link to={"/"} >
+            <ul
+              onClick={() => handleMenu()}
+              id="nav-links"
+              className="nav-links flex-col flex gap-3  text-[var(--textcolor)] justify-between items-center md:gap-13 md:flex  md:flex-row"
+            >
+              <Link to={"/"}>
                 <li className="nav-link">Home</li>
               </Link>
               <Link to={"/about"}>
@@ -69,12 +76,15 @@ function Navbar() {
           </div>
           <div className="flex gap-4 justify-center items-center">
             {/* <label htmlFor="theme"> <BsSunFill className="text-2xl"/></label> */}
-            <label htmlFor="theme" className="hover:transform hover:scale-110 duration-75">
+            <label
+              htmlFor="theme"
+              className="hover:transform hover:scale-110 duration-75"
+            >
               {" "}
               {theme ? (
                 <IoIosMoon className="text-3xl  cursor-pointer text-[var(--textcolor)] hover:text-[var(--color)]" />
               ) : (
-                <BsSunFill  className="text-3xl  text-[var(--textcolor)] hover:text-[var(--color)] cursor-pointer" />
+                <BsSunFill className="text-3xl  text-[var(--textcolor)] hover:text-[var(--color)] cursor-pointer" />
               )}
             </label>
             <input
@@ -83,7 +93,10 @@ function Navbar() {
               className="hidden"
               onChange={handleTheme}
             />
-            <div className="md:hidden hover:transform hover:scale-110 " onClick={handleMenu}>
+            <div
+              className="md:hidden hover:transform hover:scale-110 "
+              onClick={handleMenu}
+            >
               {menu ? (
                 <IoMenu className="text-4xl text-[var(--textcolor)] cursor-pointer hover:text-[var(--color)]" />
               ) : (

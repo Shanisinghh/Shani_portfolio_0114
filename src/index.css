@@ -31,10 +31,15 @@ body {
 }
 [data-theme="dark"] {
   --background: rgb(3, 2, 29);
-    --box-color: rgba(255, 255, 255, 0.1);
+  --box-color: rgba(255, 255, 255, 0.1);
   --textcolor: #e6dede;
   --shadow-color: rgba(255, 255, 255, 0.5);
-    --gradient-color: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+  --gradient-color: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
   --color: rgb(250, 83, 5);
   --button-color: rgb(17, 17, 230);
 }
@@ -45,7 +50,7 @@ body {
 .logo-text {
   background: var(--gradient-color);
   background-clip: text;
-  
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -150,23 +155,20 @@ button:hover {
   /* background-color: var(--gradient-color); */
 }
 
-
 /* skills section */
 
-
-.subject{
+.subject {
   font-size: 18px;
   font-weight: 700;
   color: var(--textcolor);
   padding-bottom: 3px;
 }
-.progress-bar{
+.progress-bar {
   width: 95%;
   position: relative;
   height: 6px;
-  background-color:var(--textcolor);
+  background-color: var(--textcolor);
   border-radius: 5px;
-
 }
 .progress-bar::after {
   position: absolute;
@@ -185,10 +187,10 @@ button:hover {
   border-radius: 15px;
   top: -1px;
   animation: progress 3s ease-in-out forwards;
-  
+
   /* animation-timeline: view(); */
 }
-.progress-line::after{
+.progress-line::after {
   content: "";
   position: absolute;
   width: 15px;
@@ -197,8 +199,7 @@ button:hover {
   border-radius: 50%;
   top: -3px;
   right: 0;
-  animation: progress .3s ease-in-out forwards;
-
+  animation: progress 0.3s ease-in-out forwards;
 }
 
 @keyframes progress {
@@ -211,20 +212,18 @@ button:hover {
 }
 /* certificates section */
 
-.box{
+.box {
   border-radius: 5px;
   box-shadow: 0px 1px 2px var(--shadow-color);
   overflow: hidden;
-   
 }
-.box:hover{
+.box:hover {
   /* transform: translateY(-2px); */
   box-shadow: 0px 3px 7px var(--shadow-color);
   transition: transform 0.2s ease-in-out;
-    
 }
 
-.box::before{
+.box::before {
   content: "";
   position: absolute;
   top: 0;
@@ -244,33 +243,28 @@ button:hover {
 
 .form-group input {
   border: none;
-outline: none;
-padding: 8px;
-width: 100%;
-height: 33px;
-border-radius: 5px;
-background-color: rgb(200, 201, 192);
-
+  outline: none;
+  padding: 8px;
+  width: 100%;
+  height: 33px;
+  border-radius: 5px;
+  background-color: rgb(200, 201, 192);
 }
 
 .form-group textarea {
   border: none;
   padding: 8px;
-outline: none;
-border-radius: 5px;
-width: 100%;
-background-color: rgb(200, 201, 192);
-
+  outline: none;
+  border-radius: 5px;
+  width: 100%;
+  background-color: rgb(200, 201, 192);
 }
 
-.form-group label{
+.form-group label {
   color: var(--textcolor);
   font-size: 16px;
   font-weight: 600;
 }
-
-
-
 
 @media (max-width: 768px) {
   .nav-links {
@@ -292,38 +286,38 @@ background-color: rgb(200, 201, 192);
     font-size: 35px;
   }
   .home-img {
-  height: 57vh;
-  width: 100vw;
-}
-.home-img img {
+    height: 57vh;
+    width: 100vw;
+  }
+  .home-img img {
     height: 300px;
     margin: 1px;
-}
-.subject {
+  }
+  .subject {
     font-size: 15px;
-}
-.progress-bar::after {
+  }
+  .progress-bar::after {
     top: -25px;
     font-size: 15px;
-}
-    .progress-bar {
+  }
+  .progress-bar {
     height: 4px;
-}
-.progress-line {
+  }
+  .progress-line {
     height: 5px;
     top: 0px;
-}
-.progress-line::after {
+  }
+  .progress-line::after {
     width: 10px;
     height: 10px;
-}
-.form-group input{
-  height: 28px;
-}
-.form-group label{
-  font-size: 14px;
-}
-.button{
-  font-size: 15px;
-}
+  }
+  .form-group input {
+    height: 28px;
+  }
+  .form-group label {
+    font-size: 14px;
+  }
+  .button {
+    font-size: 15px;
+  }
 }
