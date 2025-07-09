@@ -10,6 +10,7 @@ import github from '../assets/github.jpg'
 import javascript from '../assets/javascript.jpg'
 import htmlcss from '../assets/htmlcss.jpg'
 import letsbegain from '../assets/letsbegain.jpg'
+import react from '../assets/react.jpg'
 import python from '../assets/python.jpg'
 
 export const projects = [
@@ -118,8 +119,16 @@ const certificates = [
     animation:"zoom-in-up"
 
   },
+  
   {
     id: 5,
+    title: "Building Modern Web Applications Using React Certificate",
+    image: react,
+    animation:"flip-left"
+
+  },
+  {
+    id: 6,
     title: "python Programming With IOT Certificate",
     image: python,
     animation:"flip-down"
