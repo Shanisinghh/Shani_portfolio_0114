@@ -16,7 +16,7 @@ function Projects() {
   return (
     <>
       <div className="md:mt-20 mt-15">
-        <h1 className=" md:ml-7 ml-3 mb-4 md:text-4xl text-2xl font-bold text-[var(--textcolor)]">
+        <h1 className=" mb-11 text-center md:text-4xl text-2xl font-bold text-[var(--textcolor)]">
           Projects
         </h1>
         <div className="flex flex-wrap justify-center  pb-4  items-center gap-3.5">

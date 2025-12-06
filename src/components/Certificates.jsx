@@ -14,7 +14,7 @@ function Certificates() {
     <>
       <div className="md:mt-20 mt-15">
         <div>
-          <h1 className=" md:ml-7 ml-3 md:text-4xl text-2xl font-bold text-[var(--textcolor)]">
+          <h1 className=" md:text-4xl mb-11 text-center text-2xl font-bold text-[var(--textcolor)]">
             Certificates
           </h1>
           <div className="flex mt-4  flex-wrap gap-3.5 pb-4  justify-center">
@@ -22,7 +22,7 @@ function Certificates() {
               <div
                 key={certificate.id}
                 data-aos={certificate.animation}
-                className="box hover:transform hover:translate-y-[-2px] relative gap-3 md:w-[311px] w-[95vw] pb-3  flex flex-col  "
+                className="box hover:transform hover:translate-y-[-2px] relative gap-3 md:w-[321px] w-[95vw] pb-3  flex flex-col  "
               >
                 <img
                   src={certificate.image}

@@ -12,10 +12,31 @@ import htmlcss from '../assets/htmlcss.jpg'
 import letsbegain from '../assets/letsbegain.jpg'
 import react from '../assets/react.jpg'
 import python from '../assets/python.jpg'
+import eshiksha from '../assets/eshiksha.png'
 
 export const projects = [
-  {
+    {
     id: 1,
+    title: "E Shiksha - E-learning Website",
+    image: eshiksha,
+    animation: "zoom-in-up",
+    github: "https://github.com/Shanisinghh/E-Shiksha",
+    live: "https://e-shiksha-0114.vercel.app/",
+    description: "An e-learning platform offering courses, tutorials, and resources for students.",
+    techStack: [ "MongoDB", "Express.js", "React", "Node.js"]
+  },
+    {
+    id: 2,
+    title: "YouTube Clone",
+    image: youtube,
+    animation: "fade-right",
+    github: "https://github.com/Shanisinghh/YouTube-Clone-MERN",
+    live: "https://you-tube-clone-mern-gilt.vercel.app/",
+    description: "A YouTube-like platform that fetches and displays video content using APIs.",
+    techStack: ["MongoDB", "Express.js", "React", "Node.js"]
+  },
+  {
+    id: 3,
     title: "ShoppyGlobe E-commerce",
     image: shoppyglobe,
     animation: "zoom-in-up",
@@ -25,7 +46,7 @@ export const projects = [
     techStack: ["React", "Tailwind CSS", "Redux Toolkit", "Vite"]
   },
   {
-    id: 2,
+    id: 4,
     title: "Online Library System",
     image: library,
     animation: "zoom-in",
@@ -34,18 +55,9 @@ export const projects = [
     description: "An application to browse, add, and manage books in a virtual library.",
     techStack: ["React", "Redux Toolkit", "Tailwind CSS", "Vite"]
   },
+
   {
-    id: 3,
-    title: "YouTube Clone",
-    image: youtube,
-    animation: "fade-right",
-    github: "https://github.com/Shanisinghh/You-Tube-Clone",
-    live: "https://you-tube-clone0114.netlify.app/",
-    description: "A YouTube-like platform that fetches and displays video content using APIs.",
-    techStack: ["React", "Tailwind CSS", "Rapid API"]
-  },
-  {
-    id: 4,
+    id: 5,
     title: "Student Registration System",
     image: registrationsystem,
     animation: "slide-up",
@@ -55,7 +67,7 @@ export const projects = [
     techStack: ["HTML", "Tailwind CSS", "JavaScript"]
   },
   {
-    id: 5,
+    id: 6,
     title: "Portfolio Website",
     image: portfoloo,
     animation: "fade-right",
@@ -65,7 +77,7 @@ export const projects = [
     techStack: ["React", "Tailwind CSS", "vite"]
   },
   {
-    id: 6,
+    id: 7,
     title: "Weather Application",
     image: weatherapp,
     animation: "flip-right",
@@ -75,7 +87,7 @@ export const projects = [
     techStack: ["HTML", "Weather API", " Tailwind CSS","JavaScript"]
   },
   {
-    id: 7,
+    id: 8,
     title: "Currency Converter",
     image: currency,
     animation: "slide-up",

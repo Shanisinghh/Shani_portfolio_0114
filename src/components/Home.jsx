@@ -23,7 +23,7 @@ function Home() {
     Aos.init({ duration: 1000 });
   }, []);
   const [text] = useTypewriter({
-    words: ["Front End Developer", "React Developer", "Web Designer"],
+    words: ["Front End Developer","Full Stack Developer", "MERN Stack Developer","Backend Developer", "React Developer", "Web Designer"],
     loop: {},
   });
   return (
